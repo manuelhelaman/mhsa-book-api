@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function DeleteAction(props) {
 
     function bookDelete() {
-        fetch(`http://127.0.0.1:5000/delete/${props.id}`, {
+        fetch(`https://mhsa-book-api-practice.herokuapp.com/delete/${props.id}`, {
             method: "Delete",
             headers: {
                 "content-Type": "application/json"

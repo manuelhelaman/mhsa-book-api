@@ -12,7 +12,7 @@ export default class BookIndex extends Component {
     }
 
     componentDidMount() {    //Call the API to update the information
-        fetch( "http://127.0.0.1:5000/books" , {
+        fetch( "https://mhsa-book-api-practice.herokuapp.com/books" , {
             method: 'GET',
             headers: {
                 "accepts": "application/json",

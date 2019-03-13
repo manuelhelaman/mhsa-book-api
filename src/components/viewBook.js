@@ -13,7 +13,7 @@ export default class ViewBook extends Component {
 
     componentDidMount() {
         const { id } = this.props.match.params    
-        fetch( `http://127.0.0.1:5000/book/${id}`, {
+        fetch( `https://mhsa-book-api-practice.herokuapp.com/book/${id}`, {
             method: 'GET',
             headers: {
                 "accepts": "application/json",

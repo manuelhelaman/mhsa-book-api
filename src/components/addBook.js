@@ -21,7 +21,7 @@ export default class AddBook extends Component {
         event.preventDefault()  //prevent default for refreshing the page
         let title = this.state.title
         let author = this.state.author  
-        fetch( "http://127.0.0.1:5000/book/input", { //So we can post new authors and titles
+        fetch( "https://mhsa-book-api-practice.herokuapp.com/book/input", { //So we can post new authors and titles
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
